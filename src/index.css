@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #F7F5F0;
+    --bg-studio: #EDE8DF;
+    --surface-card: #FFFFFF;
+    --ink-primary: #1F1A15;
+    --ink-secondary: #6E655D;
+    --accent-leather: #8C6239;
+    --accent-leather-hover: #7C532B;
+    --accent-olive: #4D6646;
+  }
+
+  html,
+  body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-studio);
+    color: var(--ink-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-display {
+    font-family: 'Plus Jakarta Sans', 'DM Sans', sans-serif;
+  }
+}
+
+/* Hide scrollbars cleanly on horizontal story/filter strips while keeping touch scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
